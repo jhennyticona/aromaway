@@ -1,0 +1,42 @@
+.section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px; /* Adicione uma margem de 20px em todos os lados da página */
+  width: calc(100% - 180px); /* Subtraia a margem para manter a largura total */
+
+  }
+  .sectionWrap{
+    width: 120rem;
+    display: flex;
+    justify-content: center;
+  }
+  .sectionContent{
+    display: flex;
+    align-items: flex-start;
+    flex-flow:column wrap;
+    gap: 3.2rem;
+  }
+  .sectionTextImage {
+    display: flex;
+    gap: 3.4rem;
+    align-items:start;
+    justify-content: space-between;
+   
+  }
+  
+  .sectionText-p{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    gap: 2.8rem;
+  }
+  .participant-images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; 
+    gap: 150px;
+  }
+  
