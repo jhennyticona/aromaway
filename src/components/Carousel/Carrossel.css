@@ -1,0 +1,15 @@
+.slideshow {
+    position: relative;
+  }
+  
+  .slideshow img {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.5s; /* Adjust the duration as needed */
+    opacity: 1;
+  }
+  
+  .slideshow img.fade {
+    opacity: 0;
+  }
+  

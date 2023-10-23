@@ -1,0 +1,11 @@
+.card{
+  background-color: var(--cor-card-bg);
+  padding: 2rem;
+}
+
+.card h1{
+  color: var(--cor-card-titulo);
+  font-family: var(--ff-card);
+  font-size: 6.4rem;
+  text-align: center;
+}

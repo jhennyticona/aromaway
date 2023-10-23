@@ -1,27 +1,37 @@
-//import logo from './logo.svg';
-import React from 'react';
-import './App.css';
+import React from "react";
+import Inicio from "./components/Inicio/Inicio";
+import { Loading } from "./components/Loader/Loader";
+import { useState, useEffect } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Sobre from "./components/sobre/Sobre"
+import Loja from "./components/loja/Loja"
+function App(){
+  const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => {
+    //Simular um atraso de carregamento da página
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 3000);
+  }, []);
 
-import Sobre from './components/sobre/Sobre';
-import Loja from './components/loja/Loja';
-import { BrowserRouter,Route, Routes } from 'react-router-dom';
-function App() {
-  return (
-    
-    <>
-      <div className="App">
-        
-      <BrowserRouter>
+
+  return(
+    <div>
+      {isLoading ?(<Loading />
+      ): (
+        <>
+        <BrowserRouter>
       <Routes>
-
-      <Route path="/Sobre" element={<Sobre />} />
-      <Route path="/Loja" element={<Loja />} />
+        <Route path="/" element={<Inicio />} />
+        <Route path="/Sobre" element={<Sobre />} />
+        <Route path="/Loja" element={<Loja />} />
       </Routes>
-      </BrowserRouter>
-      
-      </div>
-    </>
+    </BrowserRouter>
+        </>
+      ) }
+          
+    </div>
   );
 }
-
 export default App;
+
