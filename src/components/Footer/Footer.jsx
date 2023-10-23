@@ -16,11 +16,13 @@ const Footer = () => {
     background-size: 200px auto;
     color: #fff;
     padding: 0px 0px;
+   
   `;
 
   const LogoImage = styled.img`
     width: 150px;
     height: auto;
+    margin-top: 150px;
     
   `;
 
@@ -33,6 +35,37 @@ const Footer = () => {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    gap: none;
+    
+    h6{
+      color: #00522E;
+      margin-left:20px;
+      margin-top: 100px;
+    }
+    a{
+      text-decoration: none;
+      color: #00522E;
+      ont-family: Poppins, Montserrat, Montserrat Classic;
+    }
+    hr{
+      width: 200px;
+      margin-top: -20px;
+    }
+  `;
+ 
+  
+  const Rights = styled.span`
+  text-align: center;
+  margin-left: 450px;
+  color: #00522E;
+  font-family: Poppins, Montserrat, Montserrat Classic;
+  
+  a{
+    text-decoration: none;
+      color: #00522E;
+      font-family: Poppins, Montserrat, Montserrat Classic;
+      
+  }
   `;
 
   return (
@@ -42,6 +75,7 @@ const Footer = () => {
 
         <LinksColumn>
           <h6>Desenvolvedores</h6>
+          <hr/>
           <ul>
             <li>
               <a href={AmandhaIn} target="_blank" rel="noopener noreferrer">
@@ -50,7 +84,7 @@ const Footer = () => {
             </li>
             <li>
               <a href={JhennyIn} target="_blank" rel="noopener noreferrer">
-                Jhenny Ticona
+                Jhenny Ticona de Castro
               </a>
             </li>
           </ul>
@@ -58,6 +92,7 @@ const Footer = () => {
 
         <LinksColumn>
           <h6>Site</h6>
+          <hr/>
           <ul>
             <li>
               <a href={AromaWaysite} rel="noopener noreferrer">
@@ -71,14 +106,14 @@ const Footer = () => {
             </li>
             <li>
               <a href="/login" rel="noopener noreferrer">
-                Login
+                Loja
               </a>
             </li>
           </ul>
         </LinksColumn>
       </FooterContainer>
       <div />
-      <span>© 2023 <a href={AromaWaysite} className="hover:underline">AromaWay</a>. All Rights Reserved.</span>
+      <Rights>© 2023 <a href={AromaWaysite} className="hover:underline">AromaWay</a>. Todos os Direitos Reservados.</Rights>
     </div>
   );
 };
