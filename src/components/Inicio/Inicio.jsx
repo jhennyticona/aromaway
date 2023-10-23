@@ -13,9 +13,13 @@ function Inicio() {
 
   return (
     <>
-    <HeaderResponsivo />
+    
     <Slideshow images={images} />
-    <img  width="100%" height="50%" alt="separador" src={separador} />
+    <img width="20%" height="100%" alt="separador" src={separador} />
+    <img width="20%" height="100%" alt="separador" src={separador} />
+    <img width="20%" height="100%" alt="separador" src={separador} />
+    <img width="20%" height="100%" alt="separador" src={separador} />
+    <img width="20%" height="100%" alt="separador" src={separador} />
     <CardResponsivo />
     <ContatoResponsivo />
    

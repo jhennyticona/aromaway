@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import './Header.css';
 import logo from '../../assets/img/aromaway-logo.png';
 import { Link} from 'react-router-dom'
-import Sobre from "../../components/sobre/Sobre"
+
 
    
 //Styled components desktop
@@ -17,12 +17,13 @@ const HeaderTitleDesk = styled.div`
   width: 100%;
   height: 112px;
   flex-shrink: 0;
-  
+  height:150px;
+
 `;
 const LogoDesk = styled.div`
     display: flex;
     justify-content: flex-start;
-    
+
 `
 
 const NavDesk = styled.nav`
@@ -73,6 +74,7 @@ const HeaderTitleMob = styled.div`
 `;
 const LogoMob = styled.div`
     display: flex;
+    width:80%;
     justify-content: flex-start;
 `
 
@@ -144,7 +146,7 @@ export const HeaderResponsivo = () => {
                             <Link to="./Loja">Loja</Link>
                         </li>
                         <li>
-                            <   Link to="/Contato">Contato</Link>
+                            <   Link to="./Contato">Contato</Link>
                         </li>
                     </ul>
                 </NavMob>
@@ -165,13 +167,13 @@ export const HeaderResponsivo = () => {
                             <Link to="/">Início</Link>
                         </li>
                         <li>
-                            <Link to="./Sobre">Sobre mim</Link>
+                            <Link to="./Sobre">Sobre</Link>
                         </li>
                         <li>
                             <Link to="./Loja">Loja</Link>
                         </li>
                         <li>
-                            <   Link to="/Contato">Contato</Link>
+                            <   Link to="./Contato">Contato</Link>
                         </li>
                     </ul>
                 </NavDesk>
@@ -182,4 +184,3 @@ export const HeaderResponsivo = () => {
 }
 
 export default HeaderResponsivo;
-

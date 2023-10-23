@@ -52,7 +52,7 @@ function Slideshow({ images }) {
         src={images[atual]}
         alt={`Slide ${atual}`}
         className="fade" 
-        width="100%"
+        width="80%"
         height="50%"
         
       />

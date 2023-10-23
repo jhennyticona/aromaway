@@ -14,10 +14,9 @@ const CardContentDesk = styled.div`
   align-items:center;
   margin-right: 30px;
   margin-left: 30px;
-  height: 400px;
+  height: 380px;
   gap:30px;
   background:url(${background});
-  
 `
 const CardTextoDesk = styled.div`
   display: flex;
