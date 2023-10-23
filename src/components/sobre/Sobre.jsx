@@ -44,7 +44,7 @@ const SobreImgLinkedin = styled.img`
 const participantes = [
   {
     nome: "Amandha Carvalho",
-    imagem: "https://avatars.githubusercontent.com/u/102036237?v=4",
+    imagem: "https://avatars.githubusercontent.com/u/148123992?v=4",
     Lhref: "https://www.linkedin.com/in/amandha-carvalho-ab1a94281/",
   },
   {

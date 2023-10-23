@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import AromaWay from '../../assets/img/aromaway-logo.png';
 
 const Footer = () => {
-  const githubAromaWay = 'https://github.com/projetodumorro';
+
   const AromaWaysite = 'https://frontend-ecru-two-98.vercel.app/';
   const JhennyIn = 'https://www.linkedin.com/in/jhennyticona/';
   const AmandhaIn = 'https://www.linkedin.com/in/amandha-carvalho-ab1a94281/';
@@ -104,11 +104,7 @@ const Footer = () => {
                 Sobre
               </a>
             </li>
-            <li>
-              <a href="/login" rel="noopener noreferrer">
-                Loja
-              </a>
-            </li>
+            
           </ul>
         </LinksColumn>
       </FooterContainer>

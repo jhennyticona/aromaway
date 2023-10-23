@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import loading from '../../assets/img/spinner.gif'
-import Inicio from '../Inicio/Inicio';
 import './Loader.css';
 
 

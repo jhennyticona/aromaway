@@ -1,6 +1,5 @@
 import React from "react";
 import Slideshow from "../Carousel/testecarrossel";
-import HeaderResponsivo from "../Header/HeaderResp";
 import Card01 from '../../assets/img/1.png'
 import Card02 from '../../assets/img/2.png'
 import Card03 from '../../assets/img/3.png'
@@ -13,7 +12,6 @@ function Inicio() {
 
   return (
     <>
-    
     <Slideshow images={images} />
     <img width="20%" height="100%" alt="separador" src={separador} />
     <img width="20%" height="100%" alt="separador" src={separador} />
@@ -22,8 +20,6 @@ function Inicio() {
     <img width="20%" height="100%" alt="separador" src={separador} />
     <CardResponsivo />
     <ContatoResponsivo />
-   
-   
     </>
   );
 }

@@ -31,10 +31,11 @@ const Card=styled.div`
 width: 200px;
 height: 450px;
   border: 1px solid #ddd;
-  border-radius: 5px;
+  border-radius: 10px 10px 10px 10px;
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
+  box-shadow: 0px 0px 10px #5EB229;
 `;
 const CardImagem=styled.img`
 width: 100%;
@@ -61,22 +62,9 @@ const CardPreco=styled.p`
 font-size: 16px;
 text-align: center;
 margin: 10px 0;
+color:#5EB229;
 `;
-const CardBotao=styled.button`
-background-color: #00522E;
-  color: #fff;
-  border: none;
-  padding: 10px;
-  font-size: 16px;
-  border-radius: 0 0 5px 5px;
-  cursor: pointer;
-  width: 100%;
-  height: 40px; /* Altura fixa para o botão */
-  margin-top: auto;
-  &:hover {
-    background-color: #5EB229;
-  }
-`;
+
 const Loja = () => {
   //Inicio do estado com uma lista de produtos
   const produtos = [
@@ -159,7 +147,7 @@ const Loja = () => {
          </CardTitulo>
             <CardPreco>Preço: R$ {produto.preco}</CardPreco>
             </CardContent>
-            <CardBotao>Adicionar ao Carrinho</CardBotao>
+            
         </Card>
         ))}
      </CardsContainer>

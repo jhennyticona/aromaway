@@ -21,14 +21,7 @@ margin-right: 30px;
 function Slideshow({ images }) {
   const [atual, setAtual] = useState(0);
 
-  const proximo = () => {
-    setAtual((anterior) => (anterior + 1) % images.length);
-  };
-
-  const anterior = () => {
-    setAtual((anterior) => (anterior - 1 + images.length) % images.length);
-  };
-
+  
   // Function to automatically switch to the next slide
   const autoSwitchSlide = () => {
     setAtual((anterior) => (anterior + 1) % images.length);

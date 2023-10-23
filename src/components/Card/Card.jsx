@@ -5,7 +5,7 @@ import card1 from '../../assets/img/card1.jpg';
 import card2 from '../../assets/img/card2.jpg';
 import card3 from '../../assets/img/card3.jpg';
 import background from '../../assets/img/background.png'
-import { Link } from 'react-router-dom';
+
 //Styled Components para Desktop
 
 const CardContentDesk = styled.div`
@@ -14,9 +14,10 @@ const CardContentDesk = styled.div`
   align-items:center;
   margin-right: 30px;
   margin-left: 30px;
-  height: 380px;
+  height: 400px;
   gap:30px;
   background:url(${background});
+  
 `
 const CardTextoDesk = styled.div`
   display: flex;
@@ -107,9 +108,7 @@ function CardMob(){
     <CardTextoMob>
       {/* <h2>Equilíbrio e Harmonia</h2> */}
       <p>Descubra o poder transformador dos óleos essenciais em nossa landing page dedicada a essas preciosas essências naturais. Nossos óleos essenciais são extraídos de fontes botânicas de alta qualidade e oferecem uma variedade de benefícios, desde alívio do estresse até a promoção de um sono tranquilo. Explore nossa gama de óleos essenciais puros e aprenda como incorporá-los em sua rotina diária para promover o bem-estar físico e emocional. Experimente a aromaterapia como nunca antes e descubra como esses óleos podem fazer a diferença em sua vida. Junte-se a nós nessa jornada de equilíbrio e harmonia.</p>
-      <Link to="./Loja">
-  <button>Compre agora</button>
-</Link>
+      <button>Compre agora</button>
     </CardTextoMob>
     <CardImageMob>
       <img width="150px" height="150px" alt="img1" src={card1} />
@@ -128,10 +127,7 @@ function CardDesk(){
     <CardTextoDesk>
       {/* <h2>Equilíbrio e Harmonia</h2> */}
       <p>Descubra o poder transformador dos óleos essenciais em nossa landing page dedicada a essas preciosas essências naturais. Nossos óleos essenciais são extraídos de fontes botânicas de alta qualidade e oferecem uma variedade de benefícios, desde alívio do estresse até a promoção de um sono tranquilo. Explore nossa gama de óleos essenciais puros e aprenda como incorporá-los em sua rotina diária para promover o bem-estar físico e emocional. Experimente a aromaterapia como nunca antes e descubra como esses óleos podem fazer a diferença em sua vida. Junte-se a nós nessa jornada de equilíbrio e harmonia.</p>
-      <Link to="/Loja">
-  <button>Compre agora</button>
-</Link>
-
+      <button>Compre agora</button>
     </CardTextoDesk>
     <CardImageDesk>
       <img width="200px" height="150px" alt="img1" src={card1} />
