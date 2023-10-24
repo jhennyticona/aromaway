@@ -1,0 +1,17 @@
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #00522E;
+    margin-top: 0;
+    margin: 0;
+}
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: justify;
+}
+hr{
+    width: 100%;
+    border: none;
+    border-top: 2px solid #ddd; /* Estilo da linha de divisão */
+    margin: 20px 0; /* Espaçamento em cima e embaixo do <hr> */
+  
+}
