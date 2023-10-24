@@ -33,7 +33,10 @@ button{
   background-color: #00522E;
   color: #fffff9;
   border-radius: 20px;
-
+  button:hover {
+    background-color: #5EB229; /* Altera a cor de fundo quando o mouse está sobre o botão */
+    cursor:pointer;
+}
 }
 `;
     
@@ -76,7 +79,10 @@ button{
   background-color: #00522E;
   color: #fffff9;
   border-radius: 20px;
-
+  button:hover {
+    background-color: #5EB229; /* Altera a cor de fundo quando o mouse está sobre o botão */
+    cursor:pointer;
+}
 }
 `;
     
@@ -97,9 +103,9 @@ function ContatoMob(){
         <ContatoTextoMob>
             <h1>Contato</h1>
             <h3>Por favor preencha o formulário para nos enviar um email.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae aut id totam alias mollitia error rem, illum, voluptatem ad quam dolorum odit assumenda nisi quis dolore omnis, esse tempore optio.</p>
+            <p>Estamos aqui para ajudar e responder a todas as suas perguntas. Preencha o formulário e entraremos em contato o mais rápido possível.</p>
             <p><b>E-mail:</b></p>
-            <p><b>aromaway@email.com</b></p>
+            <p><b>contato@aromaway.com</b></p>
         </ContatoTextoMob>
         <img height="60%" alt="separador" src={SeparadorVert}/>
         <ContatoFormMob>
@@ -121,9 +127,9 @@ function ContatoDesk(){
         <ContatoTextoDesk>
             <h1>Contato</h1>
             <h3>Por favor preencha o formulário para nos enviar um email.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae aut id totam alias mollitia error rem, illum, voluptatem ad quam dolorum odit assumenda nisi quis dolore omnis, esse tempore optio.</p>
+            <p>Estamos aqui para ajudar e responder a todas as suas perguntas. Preencha o formulário e entraremos em contato o mais rápido possível.</p>
             <p><b>E-mail:</b></p>
-            <p><b>aromaway@email.com</b></p>
+            <p><b>contato@aromaway.com</b></p>
         </ContatoTextoDesk>
         <img height="60%" alt="separador" src={SeparadorVert}/>
         <ContatoFormDesk>

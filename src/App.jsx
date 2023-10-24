@@ -9,6 +9,7 @@ import ContatoResponsivo from "./components/Contato/Contato";
 import Footer from "./components/Footer/Footer";
 import HeaderResponsivo from "./components/Header/HeaderResp";
 import ErrorPage from "./components/ErrorPage/ErrorPage"
+import Carrinho from "./components/Carrinho/Carrinho";
 function App(){
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
@@ -31,7 +32,8 @@ function App(){
         <Route path="/Sobre" element={<Sobre />} />
         <Route path="/Loja" element={<Loja />} />
         <Route path="/Contato" element={<ContatoResponsivo />} />
-        <Route path="/" errorElement={<ErrorPage />} />
+        <Route path="/*" element={<ErrorPage />} />
+        <Route path="/Carrinho" element={<Carrinho />} />
       </Routes>
       <Footer />
     </BrowserRouter>

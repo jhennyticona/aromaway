@@ -10,6 +10,7 @@ import imgagua from "../../assets/img/agua.jpg"
 import imglavanda from "../../assets/img/difusor.jpg"
 import imgbaby from "../../assets/img/baby.jpg"
 import imgvaretas from "../../assets/img/varetas.jpg"
+import { Link } from 'react-router-dom';
 import "./Loja.css";
 
 const LojaContainer=styled.div`
@@ -58,11 +59,19 @@ font-size: 16px;
   overflow: hidden;
   text-overflow: ellipsis;
 `;
+const CardDescricao=styled.p`
+font-size: 12px;
+  text-align: justify;
+  margin: 10px 0;
+  color:#00522E;
+ 
+`;
 const CardPreco=styled.p`
 font-size: 16px;
 text-align: center;
 margin: 10px 0;
-color:#5EB229;
+color:black;
+
 `;
 
 const Loja = () => {
@@ -73,60 +82,71 @@ const Loja = () => {
       nome: "Refil Lavanda 1L",
       preco: 79.99,
       foto: imgrefil,
+      descricao:"Refil de recarga com a nossa fragancia que combate o estresse",
     },
     {
       id: 2,
       nome: "Velas Aromáticas",
       preco: 59.99,
       foto: imgvelas,
+      descricao:"Velas artesanais com aromas importadas da França",
+   
     },
     {
       id: 3,
       nome: "Difusor Trousseau 400ml",
       preco: 49.99,
       foto: imgtro,
+      descricao:"Aromatizador de ambiente com o aroma mais vendido e conhecido",
     },
     {
       id: 4,
       nome: "Kit Lavabo Luxo",
       preco: 129.99,
       foto: imgkit,
+      descricao:"Kit para banheiro que contém 1 Frasco para Difusor de Ambiente 250ml e 1 Frasco para Sabonete Líquido 250ml",
     },
     {
       id: 5,
       nome: "Home Spray",
       preco: 29.99,
       foto: imghome,
+      descricao:"Basta algumas borrifadas para preencher o ambiente com sensações agradáveis e aromas sofisticados.",
     },
     {
       id: 6,
       nome: "Essência Pura 20ml",
       preco: 29.99,
       foto: imgessencia,
+      descricao:"Essência pura para fazer aromatizadores,home spray e difusores.",
     },
     {
       id: 7,
       nome: "Agua de Lençóis 500ml",
       preco: 49.99,
       foto: imgagua,
+      descricao:"Cheirinho para você borrifar no seu jogo de cama para garantir limpeza e frescor.",
     },
     {
       id: 8,
       nome: "Difusor 350ml",
       preco: 29.99,
       foto: imglavanda,
+      descricao:"Aromatizador de ambiente com varetas.",
     },
     {
       id: 9,
       nome: "Difusor Baby",
       preco: 19.99,
       foto: imgbaby,
+      descricao:"Pode ser uma lembrançinha do seu chá de bebé.",
     },
     {
       id: 10,
       nome: "Varetas Decoração",
       preco: 1.99,
       foto: imgvaretas,
+      descricao:"Decoração de varetas para dar aquele toque.",
     },
   ];
 
@@ -136,15 +156,18 @@ const Loja = () => {
       <p>Explore nossa incrível coleção de produtos, que inclui óleos essenciais puros, velas aromáticas artesanais, difusores de ambiente e muito mais. Cada item foi cuidadosamente selecionado para proporcionar uma experiência única de bem-estar e tranquilidade para você e seu ambiente. </p>
       <p>Nossos produtos são feitos com os melhores ingredientes naturais e fragrâncias exquisitas para criar uma atmosfera relaxante em sua casa ou escritório. A AromaWay é o seu destino para encontrar o equilíbrio perfeito para o seu bem-estar físico e emocional. Explore nossa seleção e descubra como podemos ajudá-lo a criar o ambiente perfeito para você.</p>
     <hr />
-
+    
      <CardsContainer>
         {produtos.map((produto) => (
         <Card key={produto.id}>
+          
         <CardImagem src={produto.foto} alt="Descrição da imagem" />
         <CardContent>
-         <CardTitulo>
-         {produto.nome}
+          <Link to="/Carrinho">
+          <CardTitulo>{produto.nome}
          </CardTitulo>
+         </Link>
+         <CardDescricao>{produto.descricao}</CardDescricao>
             <CardPreco>Preço: R$ {produto.preco}</CardPreco>
             </CardContent>
             

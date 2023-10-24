@@ -19,7 +19,8 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
   line-height: 36px;
 `;
 const SobreImg = styled.img`
-  width: 400px;
+ 
+width: 400px;
   height: 300px;
   
 `;
@@ -32,10 +33,10 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 `;
 const SectionTitleTit = styled.h1`
   text-align: center;
-  color: #5eb229;
+  color: #00522E;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-size: 50px;
+
 `;
 const SobreImgLinkedin = styled.img`
   width: 30px;
@@ -85,8 +86,8 @@ function Section() {
                   e do equilíbrio.
                 </SectionP>
               </div>
-              <div>
-                <SobreImg src={sobreimagem} alt="Imagem que mostra a loja"></SobreImg>
+              <div className="sectionImage-img">
+                <SobreImg src={sobreimagem} alt="Imagem que mostra a loja" />
               </div>
             </div>
             <div className="sectionText-p">

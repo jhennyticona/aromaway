@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import HeaderResponsivo from '../Header/HeaderResp';
 import Error from '../../assets/img/errordog.gif';
 
 
@@ -266,7 +265,7 @@ export function ErrorPage() {
     return (
         <>
             <div>
-                <HeaderResponsivo />
+                
                 <HeroError />
             </div>
         </>

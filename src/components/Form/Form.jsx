@@ -17,6 +17,7 @@ input{
 input:hover{
   background-color: #808000;
   opacity: 0.4;
+  color:black;
 }
 
 `;
@@ -57,7 +58,10 @@ button{
   color: #fffff9;
   border-radius: 20px;
   cursor: pointer;
-
+}
+button:hover {
+  background-color: #5EB229; /* Altera a cor de fundo quando o mouse está sobre o botão */
+  cursor:pointer;
 }
 `
 // Styled components para mobile
@@ -75,6 +79,7 @@ input{
 input:hover{
   background-color: #808000;
   opacity: 0.4;
+  color:black;
 }
 
 `;
@@ -115,10 +120,12 @@ button{
   color: #fffff9;
   border-radius: 20px;
   cursor: pointer;
-
+}
+button:hover {
+  background-color: #5EB229; /* Altera a cor de fundo quando o mouse está sobre o botão */
+  cursor:pointer;
 }
 `
-
 function FormMob() {
   return (
     <>
@@ -141,7 +148,7 @@ function FormMob() {
       <MenssagemMob>
         {/* <label>Nome</label> */}
         
-        <input type="input" name="menssagem" placeholder='MENSSAGEM'/>
+        <input type="input" name="menssagem" placeholder='MENSAGEM'/>
       </MenssagemMob><br/>
       <BtnMob>
       <button>Enviar</button>
@@ -175,7 +182,7 @@ function FormDesk() {
       <MenssagemDesk>
         {/* <label>Nome</label> */}
         
-        <input type="input" name="menssagem" placeholder='MENSSAGEM'/>
+        <input type="input" name="menssagem" placeholder='MENSAGEM'/>
       </MenssagemDesk><br/>
       <BtnDesk>
       <button>Enviar</button>
